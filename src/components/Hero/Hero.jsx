@@ -1,5 +1,9 @@
 import './hero.css';
 
 export default function Hero() {
-	return <div className='hero'>hero</div>;
+	return (
+		<section className='hero'>
+			<img src='' alt='Movie poster 1' />
+		</section>
+	);
 }

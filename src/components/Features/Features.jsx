@@ -4,8 +4,8 @@ import './features.css';
 
 export default function Features() {
 	return (
-		<div className='features'>
+		<section className='features'>
 			<div className=''>features</div>
-		</div>
+		</section>
 	);
 }
