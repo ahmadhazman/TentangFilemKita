@@ -1,0 +1,49 @@
+@import '../../assets/scss/global-imports';
+
+.features {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+
+	@include web-viewport {
+		gap: 7rem;
+	}
+}
+
+.feature-container {
+	// width: 100%;
+	// gap: 1.8rem;
+
+	// @include web-viewport {
+	// 	gap: 4.5rem;
+	// }
+}
+
+.feature-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 1.6rem;
+
+	@include web-viewport {
+		margin: 0 11.2rem;
+	}
+}
+
+.feature-title {
+	display: flex;
+	gap: 1rem;
+
+	@include web-viewport {
+		gap: 2.5rem;
+	}
+}
+
+.vertical-line {
+	border-left: 3px solid $tone-second;
+	height: inherit;
+
+	@include web-viewport {
+		border-left: 4px solid $tone-second;
+	}
+}

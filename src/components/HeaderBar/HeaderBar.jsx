@@ -1,11 +1,18 @@
 import PropTypes from 'prop-types';
+import Logo from '../Logo/Logo';
 import Search from '../Search/Search';
-import './headerbar.css';
+import './_headerbar.scss';
 
 export default function HeaderBar({ title }) {
 	return (
 		<div className='headerBar'>
-			<div className='logo'>{title}</div>
+			<div className='container'>
+				<Logo />
+				<ul>
+					<li>Movies</li>
+					<li>TV Shows</li>
+				</ul>
+			</div>
 			<Search />
 		</div>
 	);

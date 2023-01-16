@@ -1,0 +1,23 @@
+@import '../../../assets/scss/global-imports';
+
+.genres-container {
+	display: grid;
+	// grid-template-rows: repeat(3, 1fr);
+	// grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, minmax(5.1rem, 10.9rem));
+	grid-template-columns: repeat(3, minmax(9rem, 34.6rem));
+
+	margin: 1.8rem 1.6rem 0;
+	// gap: 1rem 1.4rem;
+	gap: 1rem;
+	justify-content: space-evenly;
+	// align-content: space-evenly;
+
+	//	set max-height to mobile so that the genres dont expand
+
+	@include web-viewport {
+		margin: 3rem 11.2rem 0;
+		gap: 2rem;
+		// gap: 1.7rem 8.9rem;
+	}
+}

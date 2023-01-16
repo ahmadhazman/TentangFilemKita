@@ -1,0 +1,11 @@
+@import '../../assets/scss/_global-imports.scss';
+
+.landing-container {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	@include web-viewport {
+		gap: 5rem;
+	}
+}

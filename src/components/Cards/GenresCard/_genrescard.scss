@@ -1,0 +1,52 @@
+@import '../../../assets/scss/global-imports';
+
+.genre-card {
+	position: relative;
+	// width: 9rem;
+	// height: 5.1rem;
+	border-radius: 15px;
+	border: 2px solid $tone-first;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+	box-shadow: $shadow-movie-card-main;
+
+	h4 {
+		color: $white-first;
+	}
+
+	@include web-viewport {
+		// width: 34.6rem;
+		// height: 10.9rem;
+		border-radius: 25px;
+	}
+}
+
+.genre-container {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	width: inherit;
+	height: inherit;
+	display: flex;
+	align-items: flex-end;
+	// padding: 0 0 1rem 1rem;
+
+	@include web-viewport {
+		bottom: 1.6rem;
+		left: 2.25rem;
+		// padding: 0 0 1.6rem 2.8rem;
+	}
+}
+
+.genre-card img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	// object-position: 0 20%;
+	z-index: -1;
+	border-radius: 15px;
+
+	@include web-viewport {
+		border-radius: 25px;
+	}
+}

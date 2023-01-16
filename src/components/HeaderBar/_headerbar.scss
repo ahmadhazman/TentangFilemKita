@@ -1,0 +1,46 @@
+@import '../../assets/scss/global-imports';
+
+.headerBar {
+	width: 100%;
+	display: flex;
+	background-color: $white-full;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.3rem 1.6rem;
+	box-shadow: $shadow-header-bar;
+	color: $primary-black;
+	@include font-mobile-body-small-bold;
+
+	@include web-viewport {
+		padding: 2.3rem 11.2rem;
+		@include font-web-body-extrabold;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		gap: 2.1rem;
+		@include web-viewport {
+			gap: 6rem;
+		}
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-flex;
+	list-style-type: none;
+	margin-right: 1rem;
+
+	&:nth-child(2) {
+		margin: 0;
+	}
+
+	@include web-viewport {
+		margin-right: 2.5rem;
+	}
+}

@@ -1,0 +1,48 @@
+@import '../../assets/scss/global-imports';
+
+.slider-container-bug {
+	margin-top: 1.8rem;
+	box-sizing: border-box;
+	border: 1px solid white;
+
+	@include web-viewport {
+		margin-top: 3rem;
+	}
+}
+
+// .slider-container::-webkit-scrollbar {
+// 	display: none;
+// }
+
+.horizontal-slider-bug {
+	display: flex;
+	gap: 1.2rem;
+	// white-space: nowrap;
+	// overflow-x: scroll;
+	// -ms-overflow-style: none;
+
+	@include web-viewport {
+		gap: 3.2rem;
+	}
+}
+
+.slider-container {
+	// position: relative;
+	padding: 1.8rem 0 0 1.6rem;
+
+	@include web-viewport {
+		padding: 3rem 11.2rem 0;
+	}
+}
+
+.horizontal-slider {
+	display: flex;
+	gap: 1.2rem;
+	overflow-x: scroll;
+	padding-bottom: 2rem;
+
+	@include web-viewport {
+		gap: 3.2rem;
+		padding-bottom: 3rem;
+	}
+}

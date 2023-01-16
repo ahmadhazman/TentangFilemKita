@@ -1,0 +1,79 @@
+@import '../../../assets/scss/global-imports';
+
+.movie-card-main {
+	display: flex;
+	flex-direction: column;
+	width: 13.2rem;
+	min-height: 18.9rem;
+	background-color: $primary-card;
+	box-shadow: $shadow-movie-card-main;
+	border-radius: 12px;
+	// white-space: pre-wrap;
+	padding-bottom: 2rem;
+
+	&:hover {
+		background-color: darken($primary-card, 5);
+		img {
+			opacity: 0.9;
+		}
+	}
+
+	img {
+		width: inherit;
+		height: 6.8rem;
+		border-radius: 12px 12px 0px 0px;
+		object-fit: cover;
+		object-position: 0 20%;
+	}
+
+	.movie-card-content {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+		margin: 1.3rem 1.55rem 0 1.55rem;
+	}
+
+	.movie-card-title {
+		margin-top: 0.5rem;
+		@include font-mobile-body-regular-bold;
+		color: $primary;
+	}
+
+	.movie-card-description {
+		@include font-mobile-body-regular;
+	}
+
+	.movie-card-casts {
+		@include font-mobile-body-small;
+	}
+
+	@include web-viewport {
+		width: 28rem;
+		min-height: 32.5rem;
+		border-radius: 50px;
+		padding-bottom: 1.5rem;
+
+		img {
+			height: 15rem;
+			width: inherit;
+			border-radius: 50px 50px 0px 0px;
+		}
+		.movie-card-content {
+			gap: 1.7rem;
+			margin: 1.7rem 3rem 0 3rem;
+		}
+
+		.movie-card-title {
+			margin-top: 0;
+			@include font-web-body-extrabold;
+		}
+
+		.movie-card-description {
+			@include font-web-body-light;
+		}
+
+		.movie-card-casts {
+			@include font-web-body-regular;
+		}
+	}
+}

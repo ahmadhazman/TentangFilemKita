@@ -1,0 +1,27 @@
+@import '../../../assets/scss/global-imports';
+
+@mixin tag-button($bg-color, $box-shadow) {
+	width: max-content;
+	height: 3.1rem;
+	padding: 0.8rem 1.1rem;
+	background: $bg-color;
+	box-shadow: $box-shadow;
+	border-radius: 9px;
+	@include font-mobile-body-small-bold;
+
+	@include web-viewport {
+		// width: 8.9rem;
+		height: 4.6rem;
+		padding: 1.2rem 1.7rem;
+		border-radius: 12px;
+		@include font-web-body-bold;
+	}
+}
+
+.tag-button-1 {
+	@include tag-button($tone-first, $shadow-tag-button-1);
+}
+
+.tag-button-2 {
+	@include tag-button($tone-second, $shadow-tag-button-2);
+}

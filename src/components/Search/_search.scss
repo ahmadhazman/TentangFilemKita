@@ -1,0 +1,11 @@
+@import '../../assets/scss/global-imports';
+
+.search-icon {
+	width: 1.7rem;
+	height: 1.7rem;
+
+	@include web-viewport {
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+}
