@@ -1,0 +1,28 @@
+$breakpoints: (
+	'xs': 0,
+	'sm': 480px,
+	//	'tab': 481px
+	'web': 481px,
+	'md': 720px,
+	'lg': 960px,
+	//	'web': 1200px
+	'xl': 1200px,
+);
+
+@mixin mobile-viewport {
+	@media only screen and (max-width: map-get($breakpoints, 'sm')) {
+		@content;
+	}
+}
+
+@mixin tablet-viewport {
+	@media only screen and (min-width: map-get($breakpoints, 'web')) and (max-width: map-get($breakpoints, 'md')) {
+		@content;
+	}
+}
+
+@mixin web-viewport {
+	@media only screen and (min-width: map-get($breakpoints, 'web')) {
+		@content;
+	}
+}

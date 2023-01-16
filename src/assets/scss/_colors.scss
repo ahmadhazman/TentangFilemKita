@@ -1,0 +1,54 @@
+/** 
+* @description Color Themes from TentangFilemKita Desgin Library
+*/
+
+/** Primary **/
+$primary: #6768ab !default;
+$primary-black: #0d2432 !default;
+$primary-dark: #343456 !default;
+$primary-light: #cfccff !default;
+$primary-background: #151522 !default;
+$primary-card: #1f1f33 !default;
+
+/** Tone **/
+$tone-first: #37526d !default;
+$tone-second: #feb17d !default;
+
+/** Greys **/
+$grey-first: #aba9bb !default;
+$grey-second: #d5d4dd !default;
+$grey-third: #f7f6f8 !default;
+$grey-dark: #464555 !default;
+
+/** White **/
+$white-first: #f9f8ff !default;
+$white-second: #f9f7ff !default;
+$white-full: #ffffff !default;
+
+// $colors: (
+// 	'primary': $primary,
+// 	'primary-black': $primary-black,
+// 	'primary-dark': $primary-dark,
+// 	'primary-light': $primary-light,
+// 	'primary-background': $primary-background,
+// 	'primary-card': $primary-card,
+// 	'tone-first': $tone-first,
+// 	'tone-second': $tone-second,
+// 	'dark-grey': $dark-grey,
+// 	'grey-first': $grey-first,
+// 	'grey-second': $grey-second,
+// 	'grey-third': $grey-third,
+// 	'white-first': $white-first,
+// 	'white-second': $white-second,
+// 	'white-full': $white-full,
+// )
+
+// Loop for generating classes
+// @each $key, $val in $colors {
+// 	.text-#{$key} {
+// 		color: $val;
+// 	}
+// 	.bg-#{$key} {
+// 		background-color: $val;
+// 	}
+// }

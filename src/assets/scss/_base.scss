@@ -1,0 +1,102 @@
+* {
+	/*	CSS reset to removes default HTML margin and padding */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+:root {
+	font-size: 62.5%;
+	/* changes a default 16px font size to 10px */
+	background-color: $primary-background;
+	color: $white-first;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	// height: 100%;
+}
+
+// @font-face {
+// 	font-family: $web-subheadings-l;
+// 	src: url('../../assets/fonts/Archivo-Black.ttf') format('truetype');
+// }
+
+// @mixin web-subheadings-l {
+// 	font-family: $web-subheadings-l;
+// 	src: url('../../assets/fonts/Archivo-Black.ttf') format('truetype');
+// 	font-style: italic;
+// 	font-size: 4.8rem;
+// 	line-height: 5.2rem;
+// }
+
+h1 {
+	/**	Hero title headings */
+	@include font-mobile-headings-hero;
+
+	@include web-viewport {
+		@include font-web-headings-hero;
+	}
+}
+
+h2 {
+	/**	Movie title (Movie Page) headings */
+	@include font-mobile-headings-movietitle;
+
+	@include web-viewport {
+		@include font-web-headings-movietitle;
+	}
+}
+
+h3 {
+	/**	Landing Page Features headings */
+	@include font-mobile-subheadings;
+
+	@include web-viewport {
+		@include font-web-subheadings-m;
+	}
+}
+
+h4 {
+	/**	Landing Page view more link headings */
+	@include font-mobile-body-regular-bold;
+	color: $primary;
+
+	@include web-viewport {
+		@include font-web-body-bold;
+	}
+}
+
+h5 {
+	/**	Movie Page & Persona Page headings */
+	@include font-mobile-body-regular-bold;
+
+	@include web-viewport {
+		@include font-web-body-bold;
+	}
+}
+
+h6 {
+	/**	Movie List headings */
+	@include font-mobile-body-regular-bold;
+
+	@include web-viewport {
+		@include font-web-body-semibold;
+	}
+}
+
+p {
+	@include font-web-body-regular;
+}
+
+.logo {
+	width: 10.4rem;
+	height: 5.3rem;
+
+	@include web-viewport {
+		width: 17.9rem;
+		height: 9rem;
+	}
+}
